@@ -52,7 +52,7 @@ export default function App() {
       src="/logo.png" 
       alt="Logo Brandon Ennier" 
       className="logo" 
-      style={{ width: "150px", height: "auto", display: "block", margin: "0 auto 1rem" }} 
+      style={{ width: "450px", height: "auto", display: "auto", margin: "0 auto 1rem" }} 
     />
       <h1>🏠 Hipoteca Panamá 2026</h1>
       <p className="sub">Leyes 468 y 481 de 2025 · Interés preferencial</p>
@@ -70,8 +70,7 @@ export default function App() {
           <label>Región
             <select value={f.region} onChange={set("region")}>
               <option value="1">Región 1 – Panamá y Panamá Oeste</option>
-              <option value="2">Región 2 – Colón, Chiriquí (David) y resto del país</option>
-              <option value="3">Región 3 – Colón, Chiriquí (David) y resto del país</option></select></label>
+              <option value="2">Región 2 – Colón, Chiriquí (David) y resto del país</option></select></label>
         )}
 
         <label>Abono inicial
@@ -157,7 +156,6 @@ export default function App() {
         <button className="link" onClick={() => setShowAll(!showAll)}>
           {showAll ? "Mostrar menos" : `Ver los ${res.schedule.length} meses`}</button>
       </>)}
-      <p className="foot">Simulación referencial. Confirme tasas y condiciones con su banco.</p>
        <footer className="footer">
         <p className="foot">
           Simulación referencial. Confirme tasas y condiciones con su banco.
